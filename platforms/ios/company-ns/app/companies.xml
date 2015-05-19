@@ -1,0 +1,13 @@
+<Page loaded="onPageLoaded">
+  <GridLayout rows="auto, *">
+    <StackLayout orientation="horizontal" row="0">
+      <TextField width="200" text="{{ company }}" hint="Enter a Company" id="company" />
+      <Button text="Add" tap="add"></Button>
+    </StackLayout>
+    <ListView items="{{ companies }}" row="1">
+      <ListView.itemTemplate>
+        <Label text="{{ name }}" />
+      </ListView.itemTemplate>
+    </ListView>
+  </GridLayout>
+</Page>
